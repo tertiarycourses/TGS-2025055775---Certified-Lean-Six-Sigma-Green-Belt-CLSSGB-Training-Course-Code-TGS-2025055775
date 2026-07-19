@@ -216,11 +216,9 @@ ASSESSMENT_FLOW = [
 ]
 d.flow_h("Assessment Flow", ASSESSMENT_FLOW, kicker="ON ASSESSMENT DAY", color=VIOLET)
 
-pex = asset("clssgb-practice-exam.png")
-if pex:
-    d.image_slide("Practice Exam", pex, kicker="EXAMS.TERTIARYINFOTECH.COM",
-                  caption="Practise at exams.tertiaryinfotech.com before sitting the final assessment.",
-                  accent=TEAL)
+# NOTE: no Practice Exam slide — there is no Six Sigma practice exam on
+# exams.tertiaryinfotech.com. The bundled clssgb-practice-exam.png has been
+# deleted; do not reintroduce this slide for this course.
 
 # ============================================================ FOUNDATIONS
 concepts.foundations(d)

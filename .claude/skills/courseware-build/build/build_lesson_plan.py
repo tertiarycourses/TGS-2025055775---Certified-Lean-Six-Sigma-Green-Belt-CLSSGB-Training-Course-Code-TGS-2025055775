@@ -184,13 +184,14 @@ prodoc.add_cover_page(doc,"LESSON PLAN",C.TITLE,C.VERSION.lstrip("v"),
                       course_logo=None, course_code=C.COURSE_CODE)
 prodoc.add_version_control(doc,[
  ("1","1 June 2026","Initial release - CLSSGB lesson plan.",C.TRAINER),
- ("2",C.VERSION_DATE,"Major revision: rebuilt as a 4-day Green Belt progression from the Yellow Belt "
+ ("2","19 July 2026","Major revision: rebuilt as a 4-day Green Belt progression from the Yellow Belt "
   "(CLSSYB, TGS-2025053922). Content deepened to the CSSC Green Belt scope (Chapters 1-24) - adds "
   "sampling and sample size calculation, Measurement System Analysis and Gage R&R, hypothesis testing "
   "with p-values and Type I/II errors, correlation and regression, FMEA and RPN, Design of Experiments, "
   "SPC control chart selection with the eight out-of-control rules, and process capability Cp/Cpk. "
   "Expanded from 10 to 25 hands-on labs across the five DMAIC phases; teaching diagrams imported from "
   "the original v21 trainer deck; schedule and labs realigned to the v6 WA (SAQ) and PP assessment papers.",C.TRAINER),
+ ("3",C.VERSION_DATE,"Removed the Practice Exam slide and its asset - there is no Six Sigma practice exam on exams.tertiaryinfotech.com.",C.TRAINER),
 ])
 prodoc.add_toc(doc)
 

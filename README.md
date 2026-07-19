@@ -14,7 +14,7 @@ This repository contains **25 guided Lean Six Sigma Yellow Belt labs** (25 core 
 
 | Artifact | File |
 |----------|------|
-| **Slide deck** | `courseware/Certified Lean Six Sigma Green Belt (CLSSGB) Training-v2.pptx` (and `.pdf`) |
+| **Slide deck** | `courseware/Certified Lean Six Sigma Green Belt (CLSSGB) Training-v3.pptx` (and `.pdf`) |
 | **Learner Guide (Markdown)** | [LG-Certified Lean Six Sigma Green Belt (CLSSGB) Training.md](LG-Certified%20Lean%20Six%20Sigma%20Green%20Belt%20%28CLSSGB%29%20Training.md) |
 | **Learner Guide (DOCX/PDF)** | `courseware/LG-Certified Lean Six Sigma Green Belt (CLSSGB) Training.docx` (and `.pdf`) |
 | **Lesson Plan (DOCX/PDF)** | `courseware/LP-Certified Lean Six Sigma Green Belt (CLSSGB) Training.docx` (and `.pdf`) |
@@ -120,4 +120,4 @@ All artifacts are generated from `course_data.py` + `data_domainN.py`, so the de
 
 ---
 
-*Version v2 · 19 July 2026 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Version v3 · 19 July 2026 · © 2026 Tertiary Infotech Academy Pte Ltd*

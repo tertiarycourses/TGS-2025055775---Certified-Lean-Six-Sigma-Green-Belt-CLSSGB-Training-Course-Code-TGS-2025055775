@@ -34,7 +34,7 @@ module + data_domainN.py so they stay 100% aligned.
 TITLE        = "Certified Lean Six Sigma Green Belt (CLSSGB) Training"
 SHORT_TITLE  = "Certified Lean Six Sigma Green Belt (CLSSGB) Training"
 COURSE_CODE  = "TGS-2025055775"
-VERSION      = "v2"
+VERSION      = "v3"
 VERSION_DATE = "19 July 2026"
 ORG          = "Tertiary Infotech Academy Pte Ltd"
 UEN          = "UEN: 201200696W"

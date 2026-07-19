@@ -1,6 +1,6 @@
 # Certified Lean Six Sigma Green Belt (CLSSGB) Training — Learner Guide
 
-**WSQ Course Code:** TGS-2025055775  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v2 · 19 July 2026**
+**WSQ Course Code:** TGS-2025055775  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v3 · 19 July 2026**
 
 ## Contents
 

@@ -271,7 +271,7 @@ prodoc.add_cover_page(doc,"LEARNER GUIDE",C.TITLE,C.VERSION.lstrip("v"),
                       course_logo=None, course_code=C.COURSE_CODE)
 prodoc.add_version_control(doc,[
  ("1","1 June 2026","Initial release - CLSSGB Learner Guide.",C.TRAINER),
- ("2",C.VERSION_DATE,"Major revision: rebuilt as a 4-day Green Belt progression from the Yellow Belt "
+ ("2","19 July 2026","Major revision: rebuilt as a 4-day Green Belt progression from the Yellow Belt "
   "(CLSSYB, TGS-2025053922). Content deepened to the CSSC Green Belt scope (Chapters 1-24) - adds "
   "sampling and sample size calculation, Measurement System Analysis and Gage R&R, hypothesis testing "
   "with p-values and Type I/II errors, correlation and regression, FMEA and RPN, Design of Experiments, "
@@ -279,6 +279,7 @@ prodoc.add_version_control(doc,[
   "Expanded from 10 to 25 hands-on labs across the five DMAIC phases; the running scenario is now the "
   "Northwind Retail Distribution Centre order-fulfilment process, matching the WA (SAQ) and PP "
   "assessment papers.",C.TRAINER),
+ ("3",C.VERSION_DATE,"Removed the Practice Exam slide and its asset - there is no Six Sigma practice exam on exams.tertiaryinfotech.com.",C.TRAINER),
 ])
 prodoc.add_toc(doc)
 
