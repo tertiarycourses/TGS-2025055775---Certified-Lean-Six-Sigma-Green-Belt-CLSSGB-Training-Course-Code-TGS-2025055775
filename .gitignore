@@ -1,10 +1,18 @@
 __pycache__/
 *.pyc
 .DS_Store
+.playwright-mcp/
 
-# Reference material (large source PPT + licensed ebook) — not redistributed
+# Office lock/temp files
+~$*
+.~lock*
+
+# Reference material (large source trainer deck + licensed ebook) — not redistributed
 reference/
 
-# CONFIDENTIAL — assessment papers and answer keys are trainer-only and are
-# deliberately NOT published to this repository (matches the upstream policy).
-assessment/
+# WSQ assessment materials (confidential — never pushed)
+/assessment/
+/assessment\ /
+
+# Distribution archives (rebuildable — never pushed to GitHub)
+*.zip

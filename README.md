@@ -2,11 +2,11 @@
 
 > **Course:** WSQ - Certified Lean Six Sigma Green Belt (CLSSGB) Training  
 > **Course Code:** TGS-2025055775  
-> **Register here:** https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-yellow-belt-clssyb-training.html
+> **Register here:** https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-green-belt-clssgb-training.html
 
 These are the hands-on lab exercises for the WSQ Certified Lean Six Sigma Green Belt (CLSSGB) Training course delivered by [Tertiary Infotech Academy Pte Ltd](https://www.tertiarycourses.com.sg/).
 
-This repository contains **25 guided Lean Six Sigma Yellow Belt labs** (25 core and 0 elective), structured around the **DMAIC roadmap** and grounded in the Council for Six Sigma Certification (CSSC) Yellow Belt body of knowledge.
+This repository contains **25 guided Lean Six Sigma Green Belt labs** (25 core and 0 elective), structured around the **DMAIC roadmap** and grounded in the Council for Six Sigma Certification (CSSC) Green Belt body of knowledge (CSSC Green Belt scope, Chapters 1-24).
 
 ---
 
@@ -29,9 +29,8 @@ This repository contains **25 guided Lean Six Sigma Yellow Belt labs** (25 core 
 
 1. Read the Learner Guide first — it follows the same DMAIC order as the course.
 2. Complete the core labs in order using the Northwind Retail Distribution Centre scenario.
-3. Complete the elective labs if time allows, or as post-course practice.
-4. Keep every worksheet — the final lab combines them into one improvement package.
-5. Review the 'Check your work' step at the end of each lab before moving on.
+3. Keep every worksheet — the final lab combines them into one improvement package.
+4. Review the 'Check your work' step at the end of each lab before moving on.
 
 ---
 
@@ -88,7 +87,7 @@ This repository contains **25 guided Lean Six Sigma Yellow Belt labs** (25 core 
 courseware/          slide deck (PPTX + PDF), Learner Guide, Lesson Plan
   archive/           superseded deck versions
   assets/            diagrams and images used by the deck
-labs/                the 14 lab worksheets + index + toolkit
+labs/                the 25 lab worksheets + index + toolkit
 LG-Certified Lean Six Sigma Green Belt (CLSSGB) Training.md
                      Learner Guide (Markdown mirror of the DOCX)
 .claude/skills/courseware-build/build/
@@ -107,8 +106,8 @@ All artifacts are generated from `course_data.py` + `data_domainN.py`, so the de
 
 ## Reference
 
-- [Council for Six Sigma Certification - Lean Six Sigma Yellow Belt Certification](https://www.sixsigmacouncil.org/lean-six-sigma-yellow-belt-certification/)
-- [Course registration page](https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-yellow-belt-clssyb-training.html)
+- [Council for Six Sigma Certification - Lean Six Sigma Green Belt Certification](https://www.sixsigmacouncil.org/lean-six-sigma-green-belt-certification/)
+- [Course registration page](https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-green-belt-clssgb-training.html)
 - [labs/tools.md](labs/tools.md) - templates, formulas and free tools used in the labs
 
 ## Free tools used

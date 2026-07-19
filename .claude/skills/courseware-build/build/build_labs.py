@@ -287,14 +287,15 @@ def repo_readme(files):
     out.append("")
     out.append(f"> **Course:** WSQ - {C.TITLE}  ")
     out.append(f"> **Course Code:** {C.COURSE_CODE}  ")
-    out.append("> **Register here:** https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-yellow-belt-clssyb-training.html")
+    out.append("> **Register here:** https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-green-belt-clssgb-training.html")
     out.append("")
     out.append(f"These are the hands-on lab exercises for the WSQ {C.TITLE} course delivered by "
                "[Tertiary Infotech Academy Pte Ltd](https://www.tertiarycourses.com.sg/).")
     out.append("")
-    out.append(f"This repository contains **{n} guided Lean Six Sigma Yellow Belt labs** "
+    out.append(f"This repository contains **{n} guided Lean Six Sigma Green Belt labs** "
                f"({core} core and {n-core} elective), structured around the **DMAIC roadmap** and grounded in the "
-               "Council for Six Sigma Certification (CSSC) Yellow Belt body of knowledge.")
+               "Council for Six Sigma Certification (CSSC) Green Belt body of knowledge "
+               "(CSSC Green Belt scope, Chapters 1-24).")
     out.append("")
     out.append("---")
     out.append("")
@@ -320,11 +321,16 @@ def repo_readme(files):
     out.append("")
     out.append("## How to use")
     out.append("")
-    out.append("1. Read the Learner Guide first — it follows the same DMAIC order as the course.")
-    out.append("2. Complete the core labs in order using the Northwind Retail Distribution Centre scenario.")
-    out.append("3. Complete the elective labs if time allows, or as post-course practice.")
-    out.append("4. Keep every worksheet — the final lab combines them into one improvement package.")
-    out.append("5. Review the 'Check your work' step at the end of each lab before moving on.")
+    # Numbered dynamically so the list stays contiguous when a course has no
+    # elective labs (this one does not).
+    _how = ["Read the Learner Guide first — it follows the same DMAIC order as the course.",
+            "Complete the core labs in order using the Northwind Retail Distribution Centre scenario."]
+    if any(a.get("elective") for a in ACT):
+        _how.append("Complete the elective labs if time allows, or as post-course practice.")
+    _how += ["Keep every worksheet — the final lab combines them into one improvement package.",
+             "Review the 'Check your work' step at the end of each lab before moving on."]
+    for _i, _step in enumerate(_how, 1):
+        out.append(f"{_i}. {_step}")
     out.append("")
     out.append("---")
     out.append("")
@@ -353,7 +359,7 @@ def repo_readme(files):
     out.append("courseware/          slide deck (PPTX + PDF), Learner Guide, Lesson Plan")
     out.append("  archive/           superseded deck versions")
     out.append("  assets/            diagrams and images used by the deck")
-    out.append("labs/                the 14 lab worksheets + index + toolkit")
+    out.append(f"labs/                the {len(ACT)} lab worksheets + index + toolkit")
     out.append(f"LG-{C.SHORT_TITLE}.md")
     out.append("                     Learner Guide (Markdown mirror of the DOCX)")
     out.append(".claude/skills/courseware-build/build/")
@@ -373,8 +379,8 @@ def repo_readme(files):
     out.append("")
     out.append("## Reference")
     out.append("")
-    out.append("- [Council for Six Sigma Certification - Lean Six Sigma Yellow Belt Certification](https://www.sixsigmacouncil.org/lean-six-sigma-yellow-belt-certification/)")
-    out.append("- [Course registration page](https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-yellow-belt-clssyb-training.html)")
+    out.append("- [Council for Six Sigma Certification - Lean Six Sigma Green Belt Certification](https://www.sixsigmacouncil.org/lean-six-sigma-green-belt-certification/)")
+    out.append("- [Course registration page](https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-green-belt-clssgb-training.html)")
     out.append("- [labs/tools.md](labs/tools.md) - templates, formulas and free tools used in the labs")
     out.append("")
     out.append("## Free tools used")
