@@ -1,78 +1,123 @@
 # TGS-2025055775 - Certified Lean Six Sigma Green Belt (CLSSGB) Training
 
-> Course: Certified Lean Six Sigma Green Belt (CLSSGB) Training  
-> Course Code: TGS-2025055775  
-> Register here: https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-green-belt-clssgb-training.html
+> **Course:** WSQ - Certified Lean Six Sigma Green Belt (CLSSGB) Training  
+> **Course Code:** TGS-2025055775  
+> **Register here:** https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-yellow-belt-clssyb-training.html
 
-Hands-on Certified Lean Six Sigma Green Belt labs for learners applying Lean Six Sigma tools to practical improvement projects. The labs cover Lean Six Sigma basics, DMAIC, process mapping, facilitation, data analysis, problem solving, root cause analysis, Kaizen, A3 reporting, FMEA, 5S, Kanban, mistake proofing, standard work, and control planning.
+These are the hands-on lab exercises for the WSQ Certified Lean Six Sigma Green Belt (CLSSGB) Training course delivered by [Tertiary Infotech Academy Pte Ltd](https://www.tertiarycourses.com.sg/).
+
+This repository contains **25 guided Lean Six Sigma Yellow Belt labs** (25 core and 0 elective), structured around the **DMAIC roadmap** and grounded in the Council for Six Sigma Certification (CSSC) Yellow Belt body of knowledge.
+
+---
 
 ## Courseware
 
-| File | Description |
-| --- | --- |
-| [Learner Guide](LG-Certified-Lean-Six-Sigma-Green-Belt-CLSSGB-Training.md) | Detailed step-by-step guide for the full course. |
-| [Labs Index](labs/README.md) | Quick access to all hands-on labs. |
-| [Tools and Templates Reference](labs/tools-and-templates.md) | Free tools, spreadsheet formulas, and project templates used in the labs. |
+| Artifact | File |
+|----------|------|
+| **Slide deck** | `courseware/Certified Lean Six Sigma Green Belt (CLSSGB) Training-v2.pptx` (and `.pdf`) |
+| **Learner Guide (Markdown)** | [LG-Certified Lean Six Sigma Green Belt (CLSSGB) Training.md](LG-Certified%20Lean%20Six%20Sigma%20Green%20Belt%20%28CLSSGB%29%20Training.md) |
+| **Learner Guide (DOCX/PDF)** | `courseware/LG-Certified Lean Six Sigma Green Belt (CLSSGB) Training.docx` (and `.pdf`) |
+| **Lesson Plan (DOCX/PDF)** | `courseware/LP-Certified Lean Six Sigma Green Belt (CLSSGB) Training.docx` (and `.pdf`) |
+| **Lab Index** | [labs/README.md](labs/README.md) |
+| **Tools and Templates** | [labs/tools.md](labs/tools.md) |
 
-## How to Use
+> **Note:** assessment papers, answer keys and trainer-only materials are intentionally not published in this repository.
 
-1. Open the learner guide first and review the Green Belt role and DMAIC flow.
-2. Complete the labs in order because each lab builds part of a practical improvement project.
-3. Use a realistic workplace process where possible.
-4. Keep all artifacts in one project folder for the final A3 report.
-5. Use spreadsheet software such as Excel, LibreOffice Calc, or Google Sheets for calculations and charts.
+---
 
-## Lab Catalogue
+## How to use
 
-### Domain 1: Basics and Background of Lean Six Sigma
+1. Read the Learner Guide first — it follows the same DMAIC order as the course.
+2. Complete the core labs in order using the Northwind Retail Distribution Centre scenario.
+3. Complete the elective labs if time allows, or as post-course practice.
+4. Keep every worksheet — the final lab combines them into one improvement package.
+5. Review the 'Check your work' step at the end of each lab before moving on.
 
-| Lab | Title | Skills Practised |
-| --- | --- | --- |
-| [Lab 01](labs/lab-01-lean-six-sigma-basics-project-selection.md) | Lean Six Sigma Basics and Project Selection | DMAIC, Green Belt role, COPQ, Kano, Y=f(x), project selection |
+---
 
-### Domain 2: Process Mapping
+## Lab catalogue
 
-| Lab | Title | Skills Practised |
-| --- | --- | --- |
-| [Lab 02](labs/lab-02-sipoc-process-map-eight-wastes.md) | SIPOC, Process Map, and Eight Wastes | SIPOC, process flowchart, value-added analysis, waste identification |
+### Foundations — Six Sigma Foundations & The Green Belt Role
 
-### Domain 3: Facilitation
+- [Lab 1 - The Green Belt Role, Project Selection and Business Case](labs/lab-01-the-green-belt-role-project-selection-and-business-case.md)
+- [Lab 2 - Y = f(X), Sigma Level, DPMO and the DMAIC Roadmap](labs/lab-02-y-fx-sigma-level-dpmo-and-the-dmaic-roadmap.md)
 
-| Lab | Title | Skills Practised |
-| --- | --- | --- |
-| [Lab 03](labs/lab-03-facilitation-stakeholders-kaizen-a3.md) | Facilitation, Stakeholders, Kaizen, and A3 | Stakeholder analysis, team facilitation, Kaizen planning, A3 report |
+### Define — Scope the Problem
 
-### Domain 4: Analyze Data
+- [Lab 3 - Voice of the Customer, Affinity Diagram and Kano Analysis](labs/lab-03-voice-of-the-customer-affinity-diagram-and-kano-analysis.md)
+- [Lab 4 - CTQ Tree — Translating Customer Needs into Measurable Requirements](labs/lab-04-ctq-tree-translating-customer-needs-into-measurable-requirem.md)
+- [Lab 5 - Project Charter, Problem Statement, Goal Statement and Scope](labs/lab-05-project-charter-problem-statement-goal-statement-and-scope.md)
+- [Lab 6 - SIPOC, Stakeholder Analysis and RACI](labs/lab-06-sipoc-stakeholder-analysis-and-raci.md)
 
-| Lab | Title | Skills Practised |
-| --- | --- | --- |
-| [Lab 04](labs/lab-04-data-collection-kpis-run-pareto.md) | Data Collection, KPIs, Run Charts, and Pareto | KPIs, operational definitions, data plan, run chart, Pareto chart |
-| [Lab 05](labs/lab-05-basic-statistics-capability.md) | Basic Statistics and Process Capability | Mean, median, variation, DPU, DPMO, yield, sigma level |
+### Measure — Quantify Performance
 
-### Domain 5: Problem Solving
+- [Lab 7 - Detailed Process Mapping and Swimlane Analysis](labs/lab-07-detailed-process-mapping-and-swimlane-analysis.md)
+- [Lab 8 - Value Stream Mapping, Takt Time and the Eight Wastes](labs/lab-08-value-stream-mapping-takt-time-and-the-eight-wastes.md)
+- [Lab 9 - Data Types, Operational Definitions and the Data Collection Plan](labs/lab-09-data-types-operational-definitions-and-the-data-collection-p.md)
+- [Lab 10 - Sampling Techniques and Sample Size Calculation](labs/lab-10-sampling-techniques-and-sample-size-calculation.md)
+- [Lab 11 - Measurement System Analysis and Gage R&R](labs/lab-11-measurement-system-analysis-and-gage-rr.md)
+- [Lab 12 - Yield, DPU, DPO, DPMO, RTY and the Hidden Factory](labs/lab-12-yield-dpu-dpo-dpmo-rty-and-the-hidden-factory.md)
+- [Lab 13 - Descriptive Statistics, Normality and Baseline Process Capability](labs/lab-13-descriptive-statistics-normality-and-baseline-process-capabi.md)
 
-| Lab | Title | Skills Practised |
-| --- | --- | --- |
-| [Lab 06](labs/lab-06-root-cause-analysis-fmea.md) | Root Cause Analysis and FMEA | Fishbone, 5 Whys, root cause validation, FMEA, risk priority |
+### Analyze — Find and Prove the Root Cause
 
-### Domain 6: Countermeasures
+- [Lab 14 - Variation, Run Charts and Stability Analysis](labs/lab-14-variation-run-charts-and-stability-analysis.md)
+- [Lab 15 - Pareto Analysis, Stratification and Boxplots](labs/lab-15-pareto-analysis-stratification-and-boxplots.md)
+- [Lab 16 - Fishbone, 5 Whys, Multi-Voting and Cause Prioritisation](labs/lab-16-fishbone-5-whys-multivoting-and-cause-prioritisation.md)
+- [Lab 17 - Hypothesis Testing — Test Selection, p-values and Conclusions](labs/lab-17-hypothesis-testing-test-selection-pvalues-and-conclusions.md)
+- [Lab 18 - Correlation, Regression and Quantifying the X-Y Relationship](labs/lab-18-correlation-regression-and-quantifying-the-xy-relationship.md)
 
-| Lab | Title | Skills Practised |
-| --- | --- | --- |
-| [Lab 07](labs/lab-07-countermeasures-5s-kanban-pokayoke.md) | Countermeasures, 5S, Kanban, and Poka-Yoke | 5S, Kanban, standard work, mistake proofing, solution selection |
-| [Lab 08](labs/lab-08-control-plan-standard-work-project-close.md) | Control Plan, Standard Work, and Project Close | Control plan, response plan, training, handover, A3 presentation |
+### Improve — Select, De-Risk and Pilot the Fix
 
-## References
+- [Lab 19 - Solution Generation, Benchmarking and Brainwriting](labs/lab-19-solution-generation-benchmarking-and-brainwriting.md)
+- [Lab 20 - Lean Countermeasures — 5S, Poka-Yoke, Pull, JIT and Standard Work](labs/lab-20-lean-countermeasures-5s-pokayoke-pull-jit-and-standard-work.md)
+- [Lab 21 - Solution Selection Matrix and Cost-Benefit Analysis](labs/lab-21-solution-selection-matrix-and-costbenefit-analysis.md)
+- [Lab 22 - FMEA, Risk Priority Numbers, DOE and Piloting](labs/lab-22-fmea-risk-priority-numbers-doe-and-piloting.md)
 
-- AALSSC Lean Six Sigma Green Belt Study Guide: https://aalssc.org/wp-content/uploads/2025/03/AALSSC-study-guide-Green.pdf
-- Course registration: https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-green-belt-clssgb-training.html
-- ASQ Lean Six Sigma resources: https://asq.org/quality-resources/six-sigma
-- NIST/SEMATECH e-Handbook of Statistical Methods: https://www.itl.nist.gov/div898/handbook/
+### Control — Hold the Gain
 
-## Free Tools Used
+- [Lab 23 - Statistical Process Control — Chart Selection and Control Limits](labs/lab-23-statistical-process-control-chart-selection-and-control-limi.md)
+- [Lab 24 - Control Plan, SOP, Visual Management and Response Plan](labs/lab-24-control-plan-sop-visual-management-and-response-plan.md)
+- [Lab 25 - Verify the Gain, A3 Storyboard, Handover and Project Closure](labs/lab-25-verify-the-gain-a3-storyboard-handover-and-project-closure.md)
+
+---
+
+## Repository structure
+
+```
+courseware/          slide deck (PPTX + PDF), Learner Guide, Lesson Plan
+  archive/           superseded deck versions
+  assets/            diagrams and images used by the deck
+labs/                the 14 lab worksheets + index + toolkit
+LG-Certified Lean Six Sigma Green Belt (CLSSGB) Training.md
+                     Learner Guide (Markdown mirror of the DOCX)
+.claude/skills/courseware-build/build/
+                     single-source generators: one content module
+                     drives the deck, LP, LG and labs
+```
+
+All artifacts are generated from `course_data.py` + `data_domainN.py`, so the deck, Lesson Plan, Learner Guide and labs stay 100% aligned.
+
+## Interactive tools
+
+- [5 Whys](https://alfredang.github.io/5whys/) — root-cause chain builder
+- [Fishbone Diagram](https://alfredang.github.io/fishbone/) — Ishikawa cause-and-effect builder
+- [Pareto Chart](https://alfredang.github.io/paretochart/) — collaborative team brainstorm, vote and live chart
+- [NovaSPC](https://alfredang.github.io/novaspc/) — run charts, SPC charts and process capability
+
+## Reference
+
+- [Council for Six Sigma Certification - Lean Six Sigma Yellow Belt Certification](https://www.sixsigmacouncil.org/lean-six-sigma-yellow-belt-certification/)
+- [Course registration page](https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-yellow-belt-clssyb-training.html)
+- [labs/tools.md](labs/tools.md) - templates, formulas and free tools used in the labs
+
+## Free tools used
 
 - Microsoft Excel, LibreOffice Calc, or Google Sheets
-- Draw.io / diagrams.net for SIPOC, process maps, and fishbone diagrams
-- Paper templates for A3, data collection plans, FMEA, and control plans
-- Whiteboard or sticky notes for Kaizen facilitation
-- Free online statistical calculators where permitted by trainer
+- Draw.io / diagrams.net for SIPOC, process maps and fishbone diagrams
+- The interactive tools listed above
+- Whiteboard or sticky notes for facilitation activities
+
+---
+
+*Version v2 · 19 July 2026 · © 2026 Tertiary Infotech Academy Pte Ltd*

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Reference material (large source PPT + licensed ebook) — not redistributed
+reference/
+
+# CONFIDENTIAL — assessment papers and answer keys are trainer-only and are
+# deliberately NOT published to this repository (matches the upstream policy).
+assessment/
