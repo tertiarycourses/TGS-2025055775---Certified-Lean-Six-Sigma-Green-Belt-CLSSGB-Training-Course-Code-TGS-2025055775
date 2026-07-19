@@ -185,7 +185,7 @@ prodoc.add_cover_page(doc,"LESSON PLAN",C.TITLE,C.VERSION.lstrip("v"),
 prodoc.add_version_control(doc,[
  ("1","1 June 2026","Initial release - CLSSGB lesson plan.",C.TRAINER),
  ("2","19 July 2026","Major revision: rebuilt as a 4-day Green Belt progression from the Yellow Belt "
-  "(CLSSYB, TGS-2025053922). Content deepened to the CSSC Green Belt scope (Chapters 1-24) - adds "
+  "(CLSSYB). Content deepened to the CSSC Green Belt scope (Chapters 1-24) - adds "
   "sampling and sample size calculation, Measurement System Analysis and Gage R&R, hypothesis testing "
   "with p-values and Type I/II errors, correlation and regression, FMEA and RPN, Design of Experiments, "
   "SPC control chart selection with the eight out-of-control rules, and process capability Cp/Cpk. "
