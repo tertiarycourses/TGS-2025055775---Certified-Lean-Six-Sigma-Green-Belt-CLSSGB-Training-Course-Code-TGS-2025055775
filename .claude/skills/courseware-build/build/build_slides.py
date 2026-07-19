@@ -116,6 +116,18 @@ else:
         "Keep them open — the assessment is open book",
     ], kicker="COURSE PORTAL · lms-tms.tertiaryinfotech.com", color=TEAL)
 
+# --- The interactive toolkit used in the labs ---
+# The same five tools listed in labs/tools.md and the Learner Guide, so the deck,
+# the labs and the guide introduce an identical toolkit.
+d.tile_grid("Your Interactive Toolkit", [
+    ("SIPOC & Process Map Builder", "alfredang.github.io/sipoc — SIPOC, pain points, swimlane and handoff table (Labs 6-7)."),
+    ("5 Whys", "alfredang.github.io/5whys — drill from symptom to an actionable root cause (Lab 16)."),
+    ("Fishbone Diagram", "alfredang.github.io/fishbone — Ishikawa cause-and-effect by 5M+E (Lab 16)."),
+    ("Pareto Chart", "alfredang.github.io/paretochart — the team brainstorms and votes, the chart builds live (Labs 15, 18)."),
+    ("NovaSPC", "alfredang.github.io/novaspc — run charts, SPC charts and capability from your CSV (Labs 13, 14, 23)."),
+    ("No install needed", "All five run in the browser. No licence, no setup — just open the link."),
+], kicker="BROWSER-BASED · USED IN THE LABS", cols=2, size=14, accent=TEAL)
+
 # --- Lesson plan: 4 days ---
 d.two_col("Lesson Plan — Days 1 & 2",
           [("Day 1 — " + C.DAY_THEMES[1], 0),

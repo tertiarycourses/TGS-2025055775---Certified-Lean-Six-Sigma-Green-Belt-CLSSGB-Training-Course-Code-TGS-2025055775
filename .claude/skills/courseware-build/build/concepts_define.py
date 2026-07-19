@@ -474,6 +474,18 @@ def define_phase(d):
                       caption="The SIPOC is the contract on scope: if it is not in the P column, it is not in this project.",
                       accent=TEAL)
 
+    # The browser tool used in Labs 6 and 7 to build the SIPOC, the swimlane and
+    # the handoff table. No install, no licence — it runs in the browser.
+    d.tile_grid(
+        "Build it in the browser - SIPOC & Process Map Builder", [
+            ("alfredang.github.io/sipoc", "The tool you will use in Lab 6 and Lab 7. No install, no licence."),
+            ("Boundaries first", "It makes you name the process, the trigger and the end state before anything else."),
+            ("SIPOC + pain points", "Build all five columns, then tag at least three pain points on the steps."),
+            ("Swimlane, generated", "Assign an actor to each step and it draws the swimlane and the handoff table."),
+            ("Check my SIPOC", "Validates your diagram against the lab and assessment criteria before you submit."),
+            ("Export and share", "Export to PNG or PDF for your project pack, or share the session with your team."),
+        ], kicker=K, cols=2, size=14, accent=TEAL)
+
     # ---------------- 13. Stakeholder analysis ----------------
     d.matrix2x2(
         "Power / interest grid",

@@ -81,8 +81,9 @@ bullets([
  "A work process of your own to think about — the tools apply far better when the example is real.",
 ])
 h3("The interactive problem-solving toolkit")
-p("Four browser-based tools are used during the labs. No installation or licence is required.")
+p("Five browser-based tools are used during the labs. No installation or licence is required.")
 bullets([
+ "SIPOC & Process Map Builder — build the SIPOC, tag pain points, auto-generate the swimlane and handoff table, validate with 'Check my SIPOC' and export to PNG/PDF: https://alfredang.github.io/sipoc/",
  "5 Whys — build and share a 5 Whys chain: https://alfredang.github.io/5whys/",
  "Fishbone Diagram — build an Ishikawa cause-and-effect diagram: https://alfredang.github.io/fishbone/",
  "Pareto Chart (collaborative) — your team brainstorms and votes in one live session and the Pareto chart builds itself: https://alfredang.github.io/paretochart/",
@@ -279,7 +280,8 @@ prodoc.add_version_control(doc,[
   "Expanded from 10 to 25 hands-on labs across the five DMAIC phases; the running scenario is now the "
   "Northwind Retail Distribution Centre order-fulfilment process, matching the WA (SAQ) and PP "
   "assessment papers.",C.TRAINER),
- ("3",C.VERSION_DATE,"Removed the Practice Exam slide and its asset - there is no Six Sigma practice exam on exams.tertiaryinfotech.com.",C.TRAINER),
+ ("3","19 July 2026","Removed the Practice Exam slide and its asset - there is no Six Sigma practice exam on exams.tertiaryinfotech.com.",C.TRAINER),
+ ("4",C.VERSION_DATE,"Added the SIPOC & Process Map Builder (alfredang.github.io/sipoc) to the toolkit - wired into Lab 6 (SIPOC build, pain points, 'Check my SIPOC' validation) and Lab 7 (swimlane and handoff table), the Define phase slides, and a new Your Interactive Toolkit slide that introduces all five browser tools.",C.TRAINER),
 ])
 prodoc.add_toc(doc)
 

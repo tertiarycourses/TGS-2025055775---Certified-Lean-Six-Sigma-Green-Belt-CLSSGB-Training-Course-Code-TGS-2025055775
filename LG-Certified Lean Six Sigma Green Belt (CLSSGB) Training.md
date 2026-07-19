@@ -1,6 +1,6 @@
 # Certified Lean Six Sigma Green Belt (CLSSGB) Training — Learner Guide
 
-**WSQ Course Code:** TGS-2025055775  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v3 · 19 July 2026**
+**WSQ Course Code:** TGS-2025055775  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v4 · 19 July 2026**
 
 ## Contents
 
@@ -94,8 +94,9 @@ This course is aligned to the WSQ Technical Skills and Competencies (TSC) Qualit
 
 **The interactive problem-solving toolkit**
 
-Four browser-based tools are used during the labs. No installation or licence is required.
+Five browser-based tools are used during the labs. No installation or licence is required.
 
+- SIPOC & Process Map Builder — build the SIPOC, tag pain points, auto-generate the swimlane and handoff table, validate with 'Check my SIPOC' and export to PNG/PDF: https://alfredang.github.io/sipoc/
 - 5 Whys — build and share a 5 Whys chain: https://alfredang.github.io/5whys/
 - Fishbone Diagram — build an Ishikawa cause-and-effect diagram: https://alfredang.github.io/fishbone/
 - Pareto Chart (collaborative) — your team brainstorms and votes in one live session and the Pareto chart builds itself: https://alfredang.github.io/paretochart/
@@ -321,7 +322,7 @@ Goal: Before mapping the process in detail, agree its boundaries and its custome
 
 **What you'll build**
 
-A completed SIPOC, a stakeholder power/interest grid and a RACI matrix.   (Tools and techniques: SIPOC, process boundaries, stakeholder analysis, power/interest grid, RACI.)
+A validated SIPOC (exported from the builder), a stakeholder power/interest grid and a RACI matrix.   (Tools and techniques: SIPOC & Process Map Builder, process boundaries, pain points, stakeholder analysis, power/interest grid, RACI.)
 
 ![Lab 6 at a glance — the deliverable, the tools and the steps.](courseware/assets/lg-visuals/lab-06-visual.png)
 
@@ -329,18 +330,26 @@ A completed SIPOC, a stakeholder power/interest grid and a RACI matrix.   (Tools
 
 **Step-by-step**
 
-1. Agree the process boundaries first — write the explicit start trigger and stop event for the Northwind order-fulfilment process.
-2. List the Process steps: five to seven high-level steps only. Resist the urge to detail — that comes in Lab 7.
-3. Work outward: list the Outputs of the process and the Customers who receive each output.
-4. List the Inputs each step consumes and the Suppliers who provide them, internal and external.
-5. Validate the SIPOC with someone who does the work — SIPOCs built in a meeting room are usually wrong.
-6. Identify every stakeholder and plot them on a power/interest grid: manage closely, keep satisfied, keep informed, or monitor.
-7. Build the RACI for the project deliverables — exactly one Accountable per row, no more.
-8. For each high-power stakeholder, note their likely objection and your engagement approach.
+1. Open the SIPOC & Process Map Builder — it walks you through the boundaries, the SIPOC and the pain points in order.
+
+   ```bash
+   https://alfredang.github.io/sipoc/
+   ```
+
+2. Agree the process boundaries first — write the explicit start trigger and stop event for the Northwind order-fulfilment process. Boundary disputes are where most SIPOCs fail.
+3. List the Process steps: five to seven high-level steps only. Resist the urge to detail — that comes in Lab 7.
+4. Work outward: list the Outputs of the process and the Customers who receive each output.
+5. List the Inputs each step consumes and the Suppliers who provide them, internal and external.
+6. Tag at least three pain points on the process steps — the delays, rework loops and unclear handoffs you already suspect.
+7. Run 'Check my SIPOC' in the tool to validate your diagram against the lab and assessment criteria, then export it as PNG or PDF for your project pack.
+8. Validate the SIPOC with someone who does the work — SIPOCs built in a meeting room are usually wrong.
+9. Identify every stakeholder and plot them on a power/interest grid: manage closely, keep satisfied, keep informed, or monitor.
+10. Build the RACI for the project deliverables — exactly one Accountable per row, no more.
+11. For each high-power stakeholder, note their likely objection and your engagement approach.
 
 **Check your work**
 
-All five SIPOC columns are populated, the boundaries are explicit, and your RACI has exactly one Accountable per deliverable.
+'Check my SIPOC' passes, all five columns are populated with explicit boundaries and at least three pain points tagged, and your RACI has exactly one Accountable per deliverable.
 
 > **Note:** The full worksheet for this lab is in labs/lab-06-*.md.
 
@@ -372,7 +381,7 @@ Goal: The SIPOC gave the macro view; now build the detailed map that shows every
 
 **What you'll build**
 
-A detailed process map and a swimlane map with pain points and handoffs marked.   (Tools and techniques: Process symbols, flowchart, swimlane map, handoff analysis, pain points.)
+A detailed process map and a swimlane map with pain points and handoffs marked.   (Tools and techniques: SIPOC & Process Map Builder, process symbols, flowchart, swimlane map, handoff analysis, pain points.)
 
 ![Lab 7 at a glance — the deliverable, the tools and the steps.](courseware/assets/lg-visuals/lab-07-visual.png)
 
@@ -383,11 +392,17 @@ A detailed process map and a swimlane map with pain points and handoffs marked. 
 1. Review the standard process symbols: oval for start/stop, rectangle for activity, diamond for decision, D-shape for delay, and the document symbol.
 2. Walk the process physically (go to gemba) and record every step in sequence as it actually happens — not as the SOP says it should.
 3. Build the detailed process map with columns: Step, Actor, Activity, System, Time, Handoff (Y/N).
-4. Redraw the same flow as a swimlane map, giving each actor or department its own lane.
-5. Count the handoffs — every time the flow crosses a lane boundary. Mark each one, since each is a queue and a risk of information loss.
-6. Mark every decision diamond that creates a rework loop and note what percentage of work takes the rework path.
-7. Tag pain points: delays, rework, unclear ownership, duplicate data entry and waiting for approval.
-8. Identify the three steps you suspect consume the most elapsed time — you will test that suspicion with data in Lab 9.
+4. Continue in the SIPOC & Process Map Builder — assign an actor to each step and it generates the swimlane and the handoff table for you.
+
+   ```bash
+   https://alfredang.github.io/sipoc/
+   ```
+
+5. Redraw the same flow as a swimlane map, giving each actor or department its own lane.
+6. Count the handoffs — every time the flow crosses a lane boundary. Mark each one, since each is a queue and a risk of information loss.
+7. Mark every decision diamond that creates a rework loop and note what percentage of work takes the rework path.
+8. Tag pain points: delays, rework, unclear ownership, duplicate data entry and waiting for approval.
+9. Identify the three steps you suspect consume the most elapsed time — you will test that suspicion with data in Lab 9.
 
 **Check your work**
 

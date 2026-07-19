@@ -14,7 +14,7 @@ This repository contains **25 guided Lean Six Sigma Green Belt labs** (25 core a
 
 | Artifact | File |
 |----------|------|
-| **Slide deck** | `courseware/Certified Lean Six Sigma Green Belt (CLSSGB) Training-v3.pptx` (and `.pdf`) |
+| **Slide deck** | `courseware/Certified Lean Six Sigma Green Belt (CLSSGB) Training-v4.pptx` (and `.pdf`) |
 | **Learner Guide (Markdown)** | [LG-Certified Lean Six Sigma Green Belt (CLSSGB) Training.md](LG-Certified%20Lean%20Six%20Sigma%20Green%20Belt%20%28CLSSGB%29%20Training.md) |
 | **Learner Guide (DOCX/PDF)** | `courseware/LG-Certified Lean Six Sigma Green Belt (CLSSGB) Training.docx` (and `.pdf`) |
 | **Lesson Plan (DOCX/PDF)** | `courseware/LP-Certified Lean Six Sigma Green Belt (CLSSGB) Training.docx` (and `.pdf`) |
@@ -99,6 +99,7 @@ All artifacts are generated from `course_data.py` + `data_domainN.py`, so the de
 
 ## Interactive tools
 
+- [SIPOC & Process Map Builder](https://alfredang.github.io/sipoc/) — SIPOC, swimlane, handoff table and flowchart builder
 - [5 Whys](https://alfredang.github.io/5whys/) — root-cause chain builder
 - [Fishbone Diagram](https://alfredang.github.io/fishbone/) — Ishikawa cause-and-effect builder
 - [Pareto Chart](https://alfredang.github.io/paretochart/) — collaborative team brainstorm, vote and live chart
@@ -119,4 +120,4 @@ All artifacts are generated from `course_data.py` + `data_domainN.py`, so the de
 
 ---
 
-*Version v3 · 19 July 2026 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Version v4 · 19 July 2026 · © 2026 Tertiary Infotech Academy Pte Ltd*

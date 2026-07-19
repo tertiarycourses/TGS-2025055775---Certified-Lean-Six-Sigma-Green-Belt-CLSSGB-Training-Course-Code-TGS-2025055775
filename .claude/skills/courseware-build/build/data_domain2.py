@@ -22,11 +22,12 @@ DOMAIN2 = [
              "map that puts each actor in their own lane makes the problem visible in a way a "
              "flowchart cannot.",
         build="A detailed process map and a swimlane map with pain points and handoffs marked.",
-        services="Process symbols, flowchart, swimlane map, handoff analysis, pain points",
+        services="SIPOC & Process Map Builder, process symbols, flowchart, swimlane map, handoff analysis, pain points",
         steps=[
             ("Review the standard process symbols: oval for start/stop, rectangle for activity, diamond for decision, D-shape for delay, and the document symbol.", ""),
             ("Walk the process physically (go to gemba) and record every step in sequence as it actually happens — not as the SOP says it should.", ""),
             ("Build the detailed process map with columns: Step, Actor, Activity, System, Time, Handoff (Y/N).", ""),
+            ("Continue in the SIPOC & Process Map Builder — assign an actor to each step and it generates the swimlane and the handoff table for you.", "https://alfredang.github.io/sipoc/"),
             ("Redraw the same flow as a swimlane map, giving each actor or department its own lane.", ""),
             ("Count the handoffs — every time the flow crosses a lane boundary. Mark each one, since each is a queue and a risk of information loss.", ""),
             ("Mark every decision diamond that creates a rework loop and note what percentage of work takes the rework path.", ""),

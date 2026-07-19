@@ -14,7 +14,11 @@ Northwind Retail Distribution Centre fulfils online orders from a 12,000 sqm war
 
 A detailed process map and a swimlane map with pain points and handoffs marked.
 
-**Tools and techniques:** Process symbols, flowchart, swimlane map, handoff analysis, pain points
+**Tools and techniques:** SIPOC & Process Map Builder, process symbols, flowchart, swimlane map, handoff analysis, pain points
+
+### Online tools used in this lab
+
+- **SIPOC & Process Map Builder** — https://alfredang.github.io/sipoc/
 
 ## Steps
 
@@ -32,21 +36,27 @@ Build the detailed process map with columns: Step, Actor, Activity, System, Time
 
 ### Step 4
 
-Redraw the same flow as a swimlane map, giving each actor or department its own lane.
+Continue in the SIPOC & Process Map Builder — assign an actor to each step and it generates the swimlane and the handoff table for you.
+
+Open the tool: <https://alfredang.github.io/sipoc/>
 
 ### Step 5
 
-Count the handoffs — every time the flow crosses a lane boundary. Mark each one, since each is a queue and a risk of information loss.
+Redraw the same flow as a swimlane map, giving each actor or department its own lane.
 
 ### Step 6
 
-Mark every decision diamond that creates a rework loop and note what percentage of work takes the rework path.
+Count the handoffs — every time the flow crosses a lane boundary. Mark each one, since each is a queue and a risk of information loss.
 
 ### Step 7
 
-Tag pain points: delays, rework, unclear ownership, duplicate data entry and waiting for approval.
+Mark every decision diamond that creates a rework loop and note what percentage of work takes the rework path.
 
 ### Step 8
+
+Tag pain points: delays, rework, unclear ownership, duplicate data entry and waiting for approval.
+
+### Step 9
 
 Identify the three steps you suspect consume the most elapsed time — you will test that suspicion with data in Lab 9.
 
@@ -60,4 +70,4 @@ Save your output — it forms part of your Northwind improvement package and is 
 
 ---
 
-*Certified Lean Six Sigma Green Belt (CLSSGB) Training · TGS-2025055775 · Version v3 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Certified Lean Six Sigma Green Belt (CLSSGB) Training · TGS-2025055775 · Version v4 · © 2026 Tertiary Infotech Academy Pte Ltd*

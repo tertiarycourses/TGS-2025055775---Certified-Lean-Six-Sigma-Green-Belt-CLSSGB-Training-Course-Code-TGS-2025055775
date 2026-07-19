@@ -36,7 +36,10 @@ def _find_repo(start):
 REPO = _find_repo(HERE)
 LABS = os.path.join(REPO, "labs")
 
+SIPOC_URL = "https://alfredang.github.io/sipoc/"
+
 TOOLS = {
+    "sipoc": ("SIPOC & Process Map Builder", "https://alfredang.github.io/sipoc/"),
     "5whys": ("5 Whys", "https://alfredang.github.io/5whys/"),
     "fishbone": ("Fishbone Diagram", "https://alfredang.github.io/fishbone/"),
     "pareto": ("Pareto Chart (collaborative)", "https://alfredang.github.io/paretochart/"),
@@ -193,10 +196,12 @@ def tools_md():
             return "-"
         return ("Lab " if len(hits) == 1 else "Labs ") + ", ".join(str(n) for n in hits)
 
+    sip  = _labs_using("sipoc")
     five = _labs_using("5 whys", "five whys")
     fish = _labs_using("fishbone", "ishikawa")
     pare = _labs_using("pareto")
     spc = _labs_using("run chart", "control chart", "spc", "process capability")
+    out.append(f"| [SIPOC & Process Map Builder]({SIPOC_URL}) | Build the SIPOC, tag pain points, auto-generate the swimlane and handoff table, then validate with 'Check my SIPOC' and export to PNG/PDF | {sip} |")
     out.append(f"| [5 Whys](https://alfredang.github.io/5whys/) | Build and share a 5 Whys root-cause chain | {five} |")
     out.append(f"| [Fishbone Diagram](https://alfredang.github.io/fishbone/) | Build an Ishikawa cause-and-effect diagram | {fish} |")
     out.append(f"| [Pareto Chart](https://alfredang.github.io/paretochart/) | Collaborative session: the team brainstorms and votes, and the Pareto chart builds itself live | {pare} |")
@@ -372,6 +377,7 @@ def repo_readme(files):
     out.append("")
     out.append("## Interactive tools")
     out.append("")
+    out.append(f"- [SIPOC & Process Map Builder]({SIPOC_URL}) — SIPOC, swimlane, handoff table and flowchart builder")
     out.append("- [5 Whys](https://alfredang.github.io/5whys/) — root-cause chain builder")
     out.append("- [Fishbone Diagram](https://alfredang.github.io/fishbone/) — Ishikawa cause-and-effect builder")
     out.append("- [Pareto Chart](https://alfredang.github.io/paretochart/) — collaborative team brainstorm, vote and live chart")

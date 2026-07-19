@@ -8,6 +8,7 @@ These browser-based tools are used during the labs. No installation or licence n
 
 | Tool | What it does | Used in |
 |------|--------------|---------|
+| [SIPOC & Process Map Builder](https://alfredang.github.io/sipoc/) | Build the SIPOC, tag pain points, auto-generate the swimlane and handoff table, then validate with 'Check my SIPOC' and export to PNG/PDF | Labs 6, 7 |
 | [5 Whys](https://alfredang.github.io/5whys/) | Build and share a 5 Whys root-cause chain | Lab 16 |
 | [Fishbone Diagram](https://alfredang.github.io/fishbone/) | Build an Ishikawa cause-and-effect diagram | Lab 16 |
 | [Pareto Chart](https://alfredang.github.io/paretochart/) | Collaborative session: the team brainstorms and votes, and the Pareto chart builds itself live | Labs 15, 18 |
@@ -28,7 +29,7 @@ These browser-based tools are used during the labs. No installation or licence n
 - **Lab 3 — Voice of the Customer, Affinity Diagram and Kano Analysis:** A VOC log, an affinity diagram of themes and a Kano classification table.
 - **Lab 4 — CTQ Tree — Translating Customer Needs into Measurable Requirements:** A three-level CTQ tree with metric, target, USL and LSL for each requirement.
 - **Lab 5 — Project Charter, Problem Statement, Goal Statement and Scope:** A complete one-page project charter with all seven sections signed off.
-- **Lab 6 — SIPOC, Stakeholder Analysis and RACI:** A completed SIPOC, a stakeholder power/interest grid and a RACI matrix.
+- **Lab 6 — SIPOC, Stakeholder Analysis and RACI:** A validated SIPOC (exported from the builder), a stakeholder power/interest grid and a RACI matrix.
 - **Lab 7 — Detailed Process Mapping and Swimlane Analysis:** A detailed process map and a swimlane map with pain points and handoffs marked.
 - **Lab 8 — Value Stream Mapping, Takt Time and the Eight Wastes:** A current-state VSM with a timeline ladder, a takt time calculation and a waste walk log.
 - **Lab 9 — Data Types, Operational Definitions and the Data Collection Plan:** A data type classification, operational definitions and a complete data collection plan.

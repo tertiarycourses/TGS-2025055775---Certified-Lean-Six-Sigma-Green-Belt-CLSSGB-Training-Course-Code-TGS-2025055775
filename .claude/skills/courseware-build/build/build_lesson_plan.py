@@ -191,7 +191,8 @@ prodoc.add_version_control(doc,[
   "SPC control chart selection with the eight out-of-control rules, and process capability Cp/Cpk. "
   "Expanded from 10 to 25 hands-on labs across the five DMAIC phases; teaching diagrams imported from "
   "the original v21 trainer deck; schedule and labs realigned to the v6 WA (SAQ) and PP assessment papers.",C.TRAINER),
- ("3",C.VERSION_DATE,"Removed the Practice Exam slide and its asset - there is no Six Sigma practice exam on exams.tertiaryinfotech.com.",C.TRAINER),
+ ("3","19 July 2026","Removed the Practice Exam slide and its asset - there is no Six Sigma practice exam on exams.tertiaryinfotech.com.",C.TRAINER),
+ ("4",C.VERSION_DATE,"Added the SIPOC & Process Map Builder (alfredang.github.io/sipoc) to the toolkit - wired into Lab 6 (SIPOC build, pain points, 'Check my SIPOC' validation) and Lab 7 (swimlane and handoff table), the Define phase slides, and a new Your Interactive Toolkit slide that introduces all five browser tools.",C.TRAINER),
 ])
 prodoc.add_toc(doc)
 

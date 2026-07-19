@@ -37,7 +37,18 @@ python3 "$HERE/build_slides.py"
 python3 "$HERE/build_lesson_plan.py"
 python3 "$HERE/build_learner_guide.py"
 
-PPT="$(ls -t "$CW"/*.pptx | head -1)"
+# Resolve the deck by the CURRENT version from course_data, not by mtime: `ls -t`
+# picks a stale deck whenever an older -vNN file was touched more recently, which
+# silently renders the PREVIOUS version's PDF.
+PPT="$(python3 - "$HERE" <<'PYVER'
+import os, sys
+here = sys.argv[1]; sys.path.insert(0, here)
+import course_data as C
+print(f"{C.SHORT_TITLE}-{C.VERSION}.pptx")
+PYVER
+)"
+PPT="$CW/$PPT"
+[ -f "$PPT" ] || { echo "!! expected deck not found: $PPT"; exit 1; }
 LP="$CW/LP-$SHORT.docx"
 LG="$CW/LG-$SHORT.docx"
 

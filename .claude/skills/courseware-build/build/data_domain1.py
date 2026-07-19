@@ -134,18 +134,21 @@ DOMAIN1 = [
              "SIPOC. Then identify every stakeholder the project touches and fix accountability "
              "with a RACI — because Green Belt projects fail on resistance far more often than "
              "on analysis.",
-        build="A completed SIPOC, a stakeholder power/interest grid and a RACI matrix.",
-        services="SIPOC, process boundaries, stakeholder analysis, power/interest grid, RACI",
+        build="A validated SIPOC (exported from the builder), a stakeholder power/interest grid and a RACI matrix.",
+        services="SIPOC & Process Map Builder, process boundaries, pain points, stakeholder analysis, power/interest grid, RACI",
         steps=[
-            ("Agree the process boundaries first — write the explicit start trigger and stop event for the Northwind order-fulfilment process.", ""),
+            ("Open the SIPOC & Process Map Builder — it walks you through the boundaries, the SIPOC and the pain points in order.", "https://alfredang.github.io/sipoc/"),
+            ("Agree the process boundaries first — write the explicit start trigger and stop event for the Northwind order-fulfilment process. Boundary disputes are where most SIPOCs fail.", ""),
             ("List the Process steps: five to seven high-level steps only. Resist the urge to detail — that comes in Lab 7.", ""),
             ("Work outward: list the Outputs of the process and the Customers who receive each output.", ""),
             ("List the Inputs each step consumes and the Suppliers who provide them, internal and external.", ""),
+            ("Tag at least three pain points on the process steps — the delays, rework loops and unclear handoffs you already suspect.", ""),
+            ("Run 'Check my SIPOC' in the tool to validate your diagram against the lab and assessment criteria, then export it as PNG or PDF for your project pack.", ""),
             ("Validate the SIPOC with someone who does the work — SIPOCs built in a meeting room are usually wrong.", ""),
             ("Identify every stakeholder and plot them on a power/interest grid: manage closely, keep satisfied, keep informed, or monitor.", ""),
             ("Build the RACI for the project deliverables — exactly one Accountable per row, no more.", ""),
             ("For each high-power stakeholder, note their likely objection and your engagement approach.", ""),
         ],
-        test="All five SIPOC columns are populated, the boundaries are explicit, and your RACI has exactly one Accountable per deliverable.",
+        test="'Check my SIPOC' passes, all five columns are populated with explicit boundaries and at least three pain points tagged, and your RACI has exactly one Accountable per deliverable.",
     ),
 ]
