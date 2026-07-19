@@ -14,6 +14,7 @@ lms-tms.tertiaryinfotech.com:
     Learner Slides URL  <- the slides .pdf   in the  Learner Guide   folder
     Learner Guide URL   <- the LG-*.pdf      in the  Learner Guide   folder
     Lesson Plan URL     <- the LP-*.pdf      in the  Lesson Plan     folder
+    Activities/Lab URL  <- the  Activities  FOLDER itself (the lab worksheets)
 
 The LMS update endpoint (PUT /api/courses/update-course) is NOT a partial update: every
 column it does not receive is overwritten with NULL, and its learning-unit / assessment
@@ -44,6 +45,7 @@ FOLDERS = {
     "learner_guide": ("Learner Guide", "learner guide"),
     "lesson_plan": ("Lesson Plan", "lesson plan"),
     "assessment": ("Assessment", "assessment"),
+    "activities": ("Activities", "activit"),
 }
 
 
@@ -98,6 +100,20 @@ def share_link(root, path, file_id):
     return f"https://drive.google.com/file/d/{file_id}/view?usp=sharing"
 
 
+def share_folder_link(root, folder_name):
+    """Ensure 'anyone with the link can view' on a FOLDER, return its Drive URL.
+
+    The Activities/Lab link points at the whole lab folder rather than one file, so
+    learners and trainers open the worksheet set instead of a single document.
+    """
+    dirs = rc(["lsjson", f"{REMOTE}:", "--dirs-only"], root, parse=True)
+    d = next((x for x in dirs if x["Name"] == folder_name), None)
+    if not d:
+        return None
+    rc(["link", f"{REMOTE}:{folder_name}"], root)  # creates the reader permission
+    return f"https://drive.google.com/drive/folders/{d['ID']}?usp=sharing"
+
+
 def pick(files, pred, prefer=None):
     """Best match: those satisfying `prefer` win; ties broken by newest ModTime."""
     hits = [f for f in files if pred(f["Name"])]
@@ -150,6 +166,18 @@ def collect_links(root):
     take("slidesUrl", "learner_guide", lambda n: pdf(n) and not is_learner_guide(n), "learner slides .pdf")
     take("learnerGuideUrl", "learner_guide", lambda n: pdf(n) and is_learner_guide(n), "learner guide .pdf")
     take("lessonPlanUrl", "lesson_plan", pdf, "lesson plan .pdf")
+
+    # Activities / Lab: the FOLDER of lab worksheets, not a single file.
+    try:
+        act_dir = find_dir(root, *FOLDERS["activities"])
+        link = share_folder_link(root, act_dir)
+        n_files = len(files_in(root, act_dir))
+        if link:
+            out["activitiesUrl"] = (f"{act_dir}/  ({n_files} files)", link)
+        else:
+            missing.append(f"{FIELD_LABELS['activitiesUrl']}: could not share folder '{act_dir}'")
+    except SystemExit:
+        missing.append(f"{FIELD_LABELS['activitiesUrl']}: no Activities folder on Drive")
 
     # ---- the assessment: QUESTION PAPERS ONLY. Answer keys are trainer-only and never
     # reach the LMS, so they are filtered out before anything is picked.
@@ -341,6 +369,7 @@ FIELD_LABELS = {
     "slidesUrl": "Learner Slides URL",
     "learnerGuideUrl": "Learner Guide URL",
     "lessonPlanUrl": "Lesson Plan URL",
+    "activitiesUrl": "Activities/Lab URL",
     "writtenAssessmentLink": "Written Assessment (question paper)",
     "caseStudyLink": "Case Study (question paper)",
     "practicalPerformanceAssessmentLink": "Practical Performance (question paper)",
